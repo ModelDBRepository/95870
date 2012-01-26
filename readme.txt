@@ -44,3 +44,6 @@ References:
           Neurophysiol. 2004 Jul;92(1):477-83. Epub 2004 Feb 25.
 
 These files were contributed by Mahboubeh Shahali
+
+20120126 solve method in Cad.mod updated from euler to derivimplicit as per
+http://www.neuron.yale.edu/phpbb/viewtopic.php?f=28&t=592
