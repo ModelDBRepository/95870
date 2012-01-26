@@ -1,0 +1,44 @@
+//comparing two rods,first rod have nonselective cation channel (h),but second one does not.
+load_file("nrngui.hoc")
+load_proc ("nrnmainmenu")
+create rod1,rod2
+access rod1
+rod1{//with nonselective cation channel (h)
+
+ nseg=1
+ diam=10  //um
+ L=10/PI  //um
+ cm=30  // 1uF/cm2
+ insert Kv
+ insert hyper
+ insert Kx
+ insert Leak
+ insert Ca
+ insert Cad
+ insert CPR
+ }
+access rod2
+rod2{//without nonselective cation channel (h)
+ nseg=1
+ diam=10  //um
+ L=10/PI  //um
+ cm=30  // 1uF/cm2
+ insert Kv
+ insert Kx
+ insert Leak
+ insert Ca
+ insert Cad
+ insert CPR
+ }
+
+
+objectvar stimulation1
+rod1 stimulation1= new IinjLT(0.5)
+	stimulation1.amp  =100 
+objectvar stimulation2
+rod2 stimulation2= new IinjLT(0.5)
+	stimulation2.amp  =100 
+
+xopen("vv.ses")
+
+
