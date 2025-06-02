@@ -26,8 +26,7 @@ Simply auto-launch from ModelDB or:
 
 These files were contributed by Mahboubeh Shahali.
 
+## Changelog
 20120126: Solve method in Cad.mod updated from Euler to derivimplicit as per [NEURON forum discussion](http://www.neuron.yale.edu/phpbb/viewtopic.php?f=28&t=592).
 
----
-
-2025-05-30: Standardized to Markdown
+20250530: Standardized to Markdown.
